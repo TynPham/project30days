@@ -12,12 +12,10 @@ body {
     height: 100vh;
     background-image: linear-gradient( 45deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 50%, rgb(255, 204, 112) 100% );
     font-family: sans-serif;
+    display: flex;
 }
 .Modal__button-btn {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: auto;
     padding: 20px 30px;
     border-radius: 5px;
     border: none;
@@ -30,7 +28,7 @@ body {
 }
 .Modal__overlay {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
@@ -43,7 +41,7 @@ body {
     background-color: #fff;
     border-radius: 5px;
     overflow: hidden;
-    animation: fadein linear 0.25s;
+    animation: fadein linear 0.3s;
 }
 .Modal__header {
     display: flex;
