@@ -1,0 +1,86 @@
+:root {
+    --primary-color: #f2726a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background: linear-gradient(45deg, #00853e, #50c878);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    margin: 0 30px;
+    width: 300px;
+    height: 400px;
+    background-color: #242628;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+.card__img {
+    margin: auto;
+    width: 120px;
+    height: 120px;
+    border: 4px solid var(--primary-color);
+    border-radius: 50%;
+    overflow: hidden;
+    transform: translateY(25px);
+    transition: 0.25s;
+}
+.card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.card h2 {
+    margin-top: 35px;
+}
+.card p {
+    color: var(--primary-color);
+}
+.card__social {
+    display: flex;
+    list-style-type: none;
+    margin-top: 35px;
+    justify-content: center;
+}
+.card__social li {
+    margin: 0 24px;
+}
+.card__social li a {
+    color: #fff;
+    font-size: 20px;
+    transition: 0.25s;
+}
+.card__contact {
+    padding: 10px 20px;
+    margin-top: 35px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: #fff;
+    transition: 0.25s;
+}
+.card__social li:hover a {
+    color: var(--primary-color);
+}
+.card__contact:hover {
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+.card__img:hover {
+    width: 100%;
+    height: 100%;
+    border-radius: unset;
+    transform: unset;
+    border: unset;
+}

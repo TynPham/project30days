@@ -1,0 +1,145 @@
+:root {
+    --primary-color: #4daf54;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background-image: linear-gradient(to right, #4daf54, #3d8880);
+}
+.card {
+    background-color:  #272d40;
+    height: 400px;
+    width: 320px;
+    margin: 120px auto;
+    border-radius: 15px;
+    padding: 20px;
+    color: #fff;
+    position: relative;
+}
+.card__heart,
+.card__cart {
+    font-size: 25px;
+    position: absolute;
+    left: 20px;
+    top: 12px;
+    z-index: 1;
+}
+.card__heart:hover,
+.card__cart:hover {
+    cursor: pointer;
+}
+.card__cart {
+    left: unset;
+    right: 20px;
+}
+.card__img {
+    margin-top: 16px;
+    width: 90%;
+    transition: 0.5s;
+}
+.card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card:hover .card__img {
+    transform: translateY(-90px) rotate(-20deg);
+}
+.card__title,
+.card__price {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 550;
+}
+.card__title {
+    color: var(--primary-color);
+    transition: 0.5s;
+}
+.card:hover .card__title
+{
+    transform: translate(-40px , -70px);
+}
+.card__price {
+    transition: 0.5s;
+}
+.card:hover .card__price {
+    transform: translate(-115px , -70px);
+}
+.card__size,
+.card__color {
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+}
+.card__size h3,
+.card__color h3 {
+    font-weight: unset;
+    margin-right: 12px;
+}
+.card__size span {
+    padding: 1px 10px;
+    background-color: #dadada;
+    color: #272d40;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.card__color span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.card__color-green {
+    background-color: green;
+}
+.card__color-red {
+    background-color: red;
+}
+.card__color-black {
+    background-color: black;
+}
+.card__action-items {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: #fff;
+    outline: none;
+    border: none;
+    margin-right: 6px;
+    font-weight: 600;
+}
+.card__action-items:hover {
+    transform: scale(0.9);
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+
+
+.card__size {
+    margin-top: 150px;
+}
+.card__size,
+.card__color,
+.card__action {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.card:hover .card__size {
+    margin-top: -30px;
+}
+.card:hover .card__size,
+.card:hover .card__color,
+.card:hover .card__action {
+    visibility: visible;
+    opacity: 1;
+}
