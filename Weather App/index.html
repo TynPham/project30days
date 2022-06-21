@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather">
+        <input type="text" class="weather__search" placeholder="Search...">
+        <h1 class="weather__place">
+            <div class="weather__place-capital">Hanoi</div>
+            <span>,</span>
+            <div class="weather__place-city">VN</div>
+        </h1>
+        <div class="weather__time">6/21/2022, 8:39:11 PM</div>
+        <div class="weather__temperature">
+            <span class="weather__temperature-value">33</span>
+            <span><span class="temperature-value-do">o</span>C</span>
+        </div>
+        <div class="weather__sky">Clouds</div>
+        <div class="weather__detail">
+            <div class="weather__detail-items eyes">
+                <i class="fa-solid fa-eye"></i>
+                <span class="weather-items-detail">10000 (m)</span>
+            </div>
+            <div class="weather__detail-items winds">
+                <i class="fa-solid fa-wind"></i>
+                <span class="weather-items-detail">5.86 (m/s)</span>
+            </div>
+            <div class="weather__detail-items clouds">
+                <i class="fa-solid fa-cloud-sun"></i>
+                <span class="weather-items-detail">100 (%)</span>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

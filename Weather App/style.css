@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+body.hot {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url(./img/hot.png) no-repeat center/cover;
+}
+body.cold {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url(./img/cold.png) no-repeat center/cover;
+}
+.weather {
+    width: 350px;
+    /* background: url(./img/hot.png) no-repeat center/cover; */
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3s;
+}
+.weather.hot {
+    background: url(./img/hot.png) no-repeat center/cover;
+}
+.weather.cold {
+    background: url(./img/cold.png) no-repeat center/cover;
+}
+.weather__search {
+    padding: 10px 20px;
+    width: 85%;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin-top: 32px;
+    font-size: 20px;
+    box-shadow: 0 5px 4px rgb(0 0 0 / 20%);
+    border-radius: 0px 15px 0 15px;
+    transition: 0.35s;
+}
+.weather__search:focus {
+    border-radius: 15px 0 15px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.weather__place {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 35px;
+    text-shadow: 2px 2px rgb(0 0 0 / 50%);
+}
+.weather__place * {
+    margin: 0 5px;
+}
+.weather__time {
+    margin-top: 5px;
+}
+.weather__temperature {
+    font-size: 65px;
+    text-shadow: 4px 4px rgb(0 0 0 / 60%);
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    box-shadow: 2px 2px 0 2px rgb(0 0 0 / 50%);
+    display: inline-block;
+    font-weight: 800;
+    margin-top: 20px;
+}
+.temperature-value-do {
+    vertical-align: super;
+    font-size: smaller;
+}
+.weather__sky {
+    font-size: 40px;
+    margin-top: 35px;
+    text-shadow: 4px 4px rgb(0 0 0 / 60%);
+    font-weight: 600;
+}
+.weather__detail {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 48px 0 80px 0;
+}
+.weather__detail-items {
+    display: flex;
+    flex-direction: column;
+}
+.weather-items-detail {
+    margin-top: 10px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <form action="">
+            <h1 class="form-heading">Register</h1>
+            <div class="form_control">
+                <input id="Username" type="text" class="form-input" placeholder="Username">
+                <small class="form-error"></small>
+                <span></span>
+            </div>
+            <div class="form_control">
+                <input id="Email" type="email" class="form-input" placeholder="Email">
+                <small class="form-error"></small>
+                <span></span>
+            </div>
+            <div class="form_control">
+                <input id="Password" type="password" class="form-input" placeholder="Password">
+                <small class="form-error"></small>
+                <span></span>
+            </div>
+            <div class="form_control">
+                <input id="Confirm-password" type="password" class="form-input" placeholder="Confirm password">
+                <small class="form-error"></small>
+                <span></span>
+            </div>
+            <button type="submit" class="form-submitBtn">Login</button>
+            <div class="form-footer">
+                Not a member? <a href="#" class="form-signup">Signup</a>
+            </div>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
