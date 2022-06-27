@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    height: 100vh;
+    overflow: hidden;
+    background-color: #8a66b4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Counter-Up__items {
+    padding: 20px 40px;
+    text-align: center;
+    color: #fff;
+    margin: 30px;
+    background-color: #6b38b6;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgb(0 0 0 / 15%);
+}
+.items-heading {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+.items-content {
+    font-size: 60px;
+}   

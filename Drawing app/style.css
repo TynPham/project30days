@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+}
+.control {
+    height: 60px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+}
+a,
+button {
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button:hover {
+   opacity: 0.8;
+}
+input {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    width: 42px;
+    height: 42px;
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+.save {
+    margin-left: auto;
+    color: blue;
+}
+canvas {
+    border: 1px solid #000;
+    margin: 0 auto;
+    display: block;
+}
